@@ -1,146 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d335561c97.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Xolotsystem Inicio</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <h1>Xolotsystem</h2>
-            <ul>
-                <li><a href="#quienesSomos">¿Quienes somos?</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#referencias">Referencias</a></li>
-                <li><a href="#contactanos">Contáctanos</a></li>
-            </ul>
-        </nav>
-        <section>
-            <div>
-                <h2>El valor de lo intangible</h2>
-                <div>
-                    <p><strong>Tranforma tu negocio con nuestra soluciones</strong></p>
-                    <p>Nos basamos en los 3 pilares esenciales para el crecimiento dde cualquier negocio:</p>
-                    <ol type="1">
-                        <li><strong>Estrategias </strong>rentables</li>
-                        <li><strong>Comunicación efectiva </strong>de marca</li>
-                        <li>Potenciación del <strong>talento </strong>humano</li>
+
+<body class="body">
+    <header class="header">
+        <section class="header__container">
+            <h3 class="header__logo">Xolotsystem</h3>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__elemento"><a class="menu__enlace" href="#">Quienes somos</a></li>
+                    <li class="menu__elemento"><a class="menu__enlace" href="#">Servicios</a></li>
+                    <li class="menu__elemento menu__elemento-active"><a class="menu__enlace menu__enlace-active"
+                            href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="header__portada">
+            <h2 class="portada__titulo">El valor de lo intangible</h2>
+            <div class="portada__contenido">
+                <div class="portada__texto">
+                    <p ><strong class="portada__destacado">Transformamos tu negocio con <br> nuestras soluciones personalizadas.</strong></p>
+                    <p>Nos basamos en los 3 pilares <br> esenciales para el crecimiento de <br> cualquier negocio:</p>
+                    <ol class="portada__lista">
+                        <li><strong class="portada__destacado">Estrategias</strong> rentables</li>
+                        <li><strong class="portada__destacado">Comunicación efectiva</strong> de la marca</li>
+                        <li>Potenciación del <strong class="portada__destacado">talento</strong> humano</li>
                     </ol>
+                    <button class="boton__negro">Conoce cómo te podemos ayudar</button>
                 </div>
-                <div>
-                    <img src="assets/img/logo.JPG" alt="Logo de XolotSystem">
-                </div>
-                <a href="">Conoce cómo te podemos ayudar</a>
+                <img class="portada__logo" src="assets/img/logo.png" alt="">
             </div>
         </section>
     </header>
-    <main>
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <article>
-                <img src="assets/img/servicioUno.jpg" alt="Imagen de Servicio">
-                <h3>Optimización de infraestructura tecnológica</h3>
-                <p>Mejora el rendimiento, reduce costos y aumenta la eficiencia operativa.</p>
-            </article>
-            <article>
-                <img src="assets/img/servicioDos.png" alt="Imagen de Servicio">
-                <h3>Soporte técnico especializado en enfoque al cliente</h3>
-                <p>Con enfoque al cliente garantiza soluciones eficientes y una mejor experiencia de usuario.</p>
-            </article>
-            <article>
-                <img src="assets/img/servicioTres.jpg" alt="Imagen de Servicio">
-                <h3>Consultoría en administración de sistemas</h3>
-                <p>Optimiza recursos, mejora la seguridad y garantiza un funcionamiento eficiente.</p>
-            </article>
-        </section>
-        <section id="quienesSomos">
-            <div>
-                <h2>¿Quienes somos?</h2>
-                <h3>Misión</h3>
-                <p>Brindar soluciones tecnológicas innovadoras en consultoría, servidores web y sistemas, optimizando la infraestructura digital de nuestros clientes para garantizar seguridad, rendimiento y escalabilidad.</p>
-                <h3>Visión</h3>
-                <p>Ser líderes en transformación digital, ofreciendo servicios de alta calidad que impulsen la eficiencia y competitividad de las empresas en un mundo cada vez más conectado.</p>
-                <a href="#servicios">Nuestros servicios</a>
-                <a href="#contactanos">Contáctanos</a>
-            </div>
-            <div>
-                <img src="assets/img/quienesSomos.jpg" alt="">
+    <main class="main">
+        <section>
+            <h2 class="main__titulos">Servicios</h2>
+            <div class="seccion__servicios">
+                <article class="servicios__articulo">
+                    <img class="servicios__imagen" src="assets/img/servicioUno.png" alt="">
+                    <h3 class="servicios__titulo">Optimización de infraestructura tecnológica</h3>
+                    <p>Mejora el rendimiento, reduce costos y aumenta la eficiencia operativa.</p>
+                </article>
+                <article class="servicios__articulo">
+                    <img class="servicios__imagen" src="assets/img/servicioDos.png" alt="">
+                    <h3 class="servicios__titulo">Soporte técnico especializado en enfoque al cliente</h3>
+                    <p>Con enfoque al cliente garantiza soluciones eficientes y una mejor experiencia de usuario.</p>
+                </article>
+                <article class="servicios__articulo">
+                    <img class="servicios__imagen" src="assets/img/servicioTres.png" alt="">
+                    <h3 class="servicios__titulo">Consultoría en administración de sistemas</h3>
+                    <p>Optimiza recursos, mejora la seguridad y garantiza un funcionamiento eficiente.</p>
+                </article>
             </div>
         </section>
-        <section id="contactanos">
-            <form action="">
-                <h2>Asesorate con Nosotros</h2>
-                <label>
-                    Nombre*
-                    <input type="text" placeholder="Nombre">
-                </label>
-                <label>
-                    Apellido
-                    <input type="text" placeholder="Apellido">
-                </label>
-                <label>
-                    Correo*
-                    <input type="email" placeholder="Correo">
-                </label>
-                <label>
-                    Teléfono*
-                    <input type="number" placeholder="Teléfono">
-                </label>
-                <label>
-                    Empresa*
-                    <input type="text" placeholder="Empresa">
-                </label>
-                <label>
-                    Nombre
-                    <textarea></textarea>
-                </label>
-                <label>
-                    Nombre*
-                    <input type="text">
-                </label>
-                <input type="submit" value="Enviar">
-            </form>
-            <p>¿Cómo podemos ayudarte? Te invitamos a que te pongas en contacto con nosotros para cualquier duda o pregunta a través de correo</p>
+        <section> 
+            <div class="seccion__nosotros">
+                <section class="nosotros__texto">
+                    <h2  class="main__titulos">¿Quiénes somos?</h2>
+                    <h3 class="nosotros__titulo">Misión</h3>
+                    <p>Brindar soluciones tecnológicas innovadoras en consultoría, servidores web y sistemas,
+                        optimizando la infraestructura digital de nuestros clientes para garantizar seguridad,
+                        rendimiento y escalabilidad.</p>
+                    <h3 class="nosotros__titulo">Visión</h3>
+                    <p>Ser líderes en transformación digital, ofreciendo servicios de alta calidad que impulsen la
+                        eficiencia y competitividad de las empresas en un mundo cada vez más conectado.</p>
+                    <div class="nosotros__botones">
+                        <button class="boton__negro">Nuestros Servicios</button>
+                        <button class="boton__negro">Contáctanos</button>
+                    </div>
+                </section>
+                <section>
+                    <img class="nosotros__img" src="assets/img/nosotros.png" alt="">
+                </section>
+            </div>
         </section>
-        <section id="referencias">
-            <h2>Cliente</h2>
-            <div>
-                <p>“Desde que decidimos transformar nuestros procesos vemos una mentalidad diferente”</p>
-                <div>
-                    <img src="assets/img/clienteUno.png" alt="">
-                    <p>Grupo Pisa</p>
-                </div>
+        <section>
+            <h2  class="main__titulos">Asesórate con Nosostros</h2>
+            <div class="seccion__contacto">
+                <form class="contacto__fomulario" action="">
+                    <label class="contacto__label50">
+                        Nombre*
+                        <input type="text" placeholder="Nombre">
+                    </label>
+                    <label class="contacto__label50">
+                        Apellido
+                        <input type="text" placeholder="Apellido">
+                    </label>
+                    <label class="contacto__label100">
+                        Correo*
+                        <input type="email" placeholder="Correo">
+                    </label>
+                    <label class="contacto__label50">
+                        Teléfono
+                        <input type="number" placeholder="Teléfono">
+                    </label>
+                    <label class="contacto__label50">
+                        Empresa*
+                        <input type="text" placeholder="Empresa">
+                    </label>
+                    <label class="contacto__label100">
+                        Mensaje
+                        <textarea placeholder="Mensaje"></textarea>
+                    </label>
+                    <button class="boton__negro boton__formulario">Enviar</button>
+                </form>
+                <section class="contacto__texto">
+                    <p class="nosotros__titulo" style="text-align: center;">¿Cómo podemos ayudarte? Te invitamos a que te pongas en contacto con nosotros para cualquier duda
+                        o pregunta a través de correo</p>
+                </section>
             </div>
-            <div>
-                <p>“Gracias a la planeación tecnologica de XolotSystems, reorganizamos la manera interna de organizarnos”</p>
-                <div>
-                    <img src="assets/img/clienteDos.png" alt="">
-                    <p>Grupo Espinoza</p>
-                </div>
-            </div>
-            <div>
-                <p>“Comprende la esencía de cada una de nuestras marcas llegando a los segmentos pretendidos y posicionarnos”</p>
-                <div>
-                    <img src="assets/img/clienteTres.jpg" alt="">
-                    <p>Nestlé</p>
-                </div>
+        </section>
+        <section>
+            <h2  class="main__titulos">Clientes</h2>
+            <div class="seccion__clientes">
+                <article class="cliente__articulo">
+                    <p>
+                        “Desde que decidimos transformar nuestros procesos vemos una mentalidad diferente”
+                    </p>
+                    <div class="cliente__imagen">
+                        <img class="cliente__img" src="assets/img/clienteUno.png" alt="">
+                        <h4>Grupo Pisa</h4>
+                    </div>
+                </article>
+                <article class="cliente__articulo">
+                    <p>
+                        “Gracias a la planeación tecnologica de XolotSystem, reorganizamos la manera interna de
+                        organizarnos”
+                    </p>
+                    <div class="cliente__imagen">
+                        <img class="cliente__img" src="assets/img/clienteDos.png" alt="">
+                        <h4>Grupo Espinoza</h4>
+                    </div>
+                </article>
+                <article class="cliente__articulo">
+                    <p>
+                        “Comprende la esencía de cada una de nuestras marcas llegando a los segmentos pretendidos y
+                        posicionarnos”
+                    </p>
+                    <div class="cliente__imagen">
+                        <img class="cliente__img" src="assets/img/clienteTres.png" alt="">
+                        <h4>Nestlé</h4>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <h2>XolotSystem</h2>
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__titulo">XolotSystem</h2>
             <p>Visitanos en nuestras redes sociales</p>
-            <section>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </section>
-        </section>
-        <p>XolotSystem.computers.email.com</p>
+            <div class="footer__iconos">
+                <a class="footer__redSocial" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="footer__redSocial" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="footer__redSocial" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer__redSocial" href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer__correo">
+            <p class=""> XolotSystems.Computers.email.com</p>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/d335561c97.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

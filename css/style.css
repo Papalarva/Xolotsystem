@@ -1,0 +1,335 @@
+/* IMPORTACIÓN DE FONST */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* VARIABLES Y FORMATEO */
+:root {
+    --titulo: "Instrument Sans", sans-serif;
+    --texto: "Inter", sans-serif;
+    --fondo: #21233C;
+    --morado: #7688FF;
+    --azul: #0D2A73;
+    --naranja: #FF6200BF;
+    --blanco: #FFFFFF;
+    --padding: 1rem 2rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: var(--texto);
+    box-sizing: border-box;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.body {
+    background-color: var(--fondo);
+    color: white;
+    width: 100vw;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header__container {
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;  
+    height: 100px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.menu__elemento {
+    padding: 0.5rem 1rem;
+}
+
+.menu__enlace {
+    color: black;
+}
+
+.menu__elemento-active {
+    background-color: var(--azul);
+    border-radius: 5px;
+}
+
+.menu__enlace-active {
+    color: var(--blanco);
+}
+
+.header__portada {
+    background-image: url(../assets/img/portada.png);
+    background-size: cover;
+    padding: 2rem 2rem; 
+    height: calc(100vh - 100px);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.portada__titulo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+}
+
+.portada__contenido {
+    display: flex;
+    flex-basis: 0;
+    gap: 100px;
+}
+
+.portada__texto p,
+strong {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.portada__texto li,
+li strong {
+    font-size: 2rem;
+}
+
+.portada__destacado {
+    color: var(--naranja);
+}
+
+.portada__lista {
+    padding-left: 3rem;
+}
+
+.portada__lista li::marker {
+    color: var(--naranja);
+    font-weight: bold;
+}
+
+.portada__logo {
+    object-fit: contain;
+}
+
+.boton__negro {
+    background-color: black;
+    padding: 1rem 2rem;
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.boton__negro:hover {
+    background-color: var(--blanco);
+    color: black;
+}
+
+
+.main {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* SECCCIÓN DE SERVICIOS */
+.seccion__servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__titulos {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+} 
+
+.servicios__articulo {
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.servicios__imagen {
+    aspect-ratio: 1/1; 
+    object-fit: cover;
+    object-position: center;
+}
+.nosotros__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.nosotros__botones {
+    display: flex;
+    gap: 2rem;
+}
+
+.servicios__titulo, .nosotros__titulo {
+    color: var(--morado);
+    font-size: 1.5rem;
+}
+
+.seccion__nosotros {
+    display: flex; 
+    align-items: center;
+    gap: 10vh;
+}
+.nosotros__img {
+    width: 75%;
+}
+
+/* SECCION CONTACTO */
+.seccion__contacto {
+    display: grid;
+    grid-template-columns: 3fr 2fr; 
+    align-items: center; 
+    gap: 2rem;
+}
+
+.contacto__fomulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacto__fomulario input, textarea {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.contacto__label100, .contacto__label50 {
+    color: var(--morado);
+}
+
+.contacto__label50 {
+    width: 45%; 
+}
+
+.contacto__label100 {
+    width: 100%;
+}
+
+.boton__formulario {
+    margin: auto;
+    padding: 0.5rem 4rem;
+}
+
+/* SECCION CLIENTES */
+.seccion__clientes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.cliente__articulo {
+    width: 30%;
+    height: 200px;
+    padding: 2rem;
+    background-color: var(--blanco);
+    color: black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+.cliente__imagen {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer {
+    background-color: var(--blanco);
+    color: black;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;  
+}
+.footer__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.footer__iconos {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__redSocial {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul);
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__redSocial:hover {
+    background-color: var(--azul);  
+    color: white;
+
+}
+
+.footer__correo {
+    display: flex;
+    width: 40%;
+    color: var(--azul); 
+}
+
+.footer__correo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+
+    * {
+        font-size: 14px;
+    }
+
+    .portada__contenido {
+        gap: 0;
+    }
+}
